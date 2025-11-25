@@ -1,0 +1,3 @@
+/home/Sonya24pt2/local_git/server/build/CMakeFiles/server.dir
+/home/Sonya24pt2/local_git/server/build/CMakeFiles/edit_cache.dir
+/home/Sonya24pt2/local_git/server/build/CMakeFiles/rebuild_cache.dir

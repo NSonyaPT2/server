@@ -28,3 +28,6 @@ clean:
 	rm -rf $(OBJDIR) $(BINDIR)
 
 rebuild: clean all
+
+enable_testing()
+add_subdirectory(tests)
