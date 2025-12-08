@@ -1,0 +1,104 @@
+\doxysection{Класс Logger}
+\hypertarget{classLogger}{}\label{classLogger}\index{Logger@{Logger}}
+
+
+Класс для ведения журнала работы сервера  
+
+
+
+
+{\ttfamily \#include $<$Logger.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classLogger_a1e66e0d14c4df89e608ec8f694a70a33}{log\+Error}} (const std\+::string \&severity, const std\+::string \&message, const std\+::string \&params="{}"{})
+\begin{DoxyCompactList}\small\item\em Запись ошибки в журнал \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}{\texorpdfstring{$\sim$}{\string~}\+Logger}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classLogger}{Logger}} \& \mbox{\hyperlink{classLogger_ab2ca8437ac8bffb3ecb621f701b6e37c}{get\+Instance}} (const std\+::string \&filename="{}/var/log/scale.\+log"{})
+\begin{DoxyCompactList}\small\item\em Получение экземпляра логгера \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для ведения журнала работы сервера 
+
+Реализует паттерн Singleton для глобального доступа к логгеру Потокобезопасен благодаря использованию мьютекса 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}\label{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a} 
+\index{Logger@{Logger}!````~Logger@{\texorpdfstring{$\sim$}{\string~}Logger}}
+\index{````~Logger@{\texorpdfstring{$\sim$}{\string~}Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Logger()}{\string~Logger()}}
+{\footnotesize\ttfamily Logger\+::\texorpdfstring{$\sim$}{\string~}\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Деструктор 
+
+Закрывает файл журнала 
+
+\doxysubsection{Методы}
+\Hypertarget{classLogger_ab2ca8437ac8bffb3ecb621f701b6e37c}\label{classLogger_ab2ca8437ac8bffb3ecb621f701b6e37c} 
+\index{Logger@{Logger}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLogger}{Logger}} \& Logger\+::get\+Instance (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename = {\ttfamily "{}/var/log/scale.log"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Получение экземпляра логгера 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em filename} & Имя файла журнала (по умолчанию /var/log/scale.log) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ссылка на единственный экземпляр логгера
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em filename} & Имя файла журнала (по умолчанию /var/log/scale.log) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Ссылка на единственный экземпляр логгера 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+Создает экземпляр при первом вызове 
+\end{DoxyNote}
+\Hypertarget{classLogger_a1e66e0d14c4df89e608ec8f694a70a33}\label{classLogger_a1e66e0d14c4df89e608ec8f694a70a33} 
+\index{Logger@{Logger}!logError@{logError}}
+\index{logError@{logError}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{logError()}{logError()}}
+{\footnotesize\ttfamily void Logger\+::log\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{severity,  }\item[{const std\+::string \&}]{message,  }\item[{const std\+::string \&}]{params = {\ttfamily "{}"{}} }\end{DoxyParamCaption})}
+
+
+
+Запись ошибки в журнал 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em severity} & Уровень серьезности ошибки \\
+\hline
+\mbox{\texttt{ in}}  & {\em message} & Текст сообщения \\
+\hline
+\mbox{\texttt{ in}}  & {\em params} & Дополнительные параметры ошибки\\
+\hline
+\mbox{\texttt{ in}}  & {\em severity} & Уровень серьезности ошибки \\
+\hline
+\mbox{\texttt{ in}}  & {\em message} & Текст сообщения \\
+\hline
+\mbox{\texttt{ in}}  & {\em params} & Дополнительные параметры ошибки\\
+\hline
+\end{DoxyParams}
+Формат записи\+: время \texorpdfstring{$\vert$}{|} уровень \texorpdfstring{$\vert$}{|} сообщение \texorpdfstring{$\vert$}{|} параметры Соответствует требованиям ТЗ п.4.\+2.\+6 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Logger.\+h\item 
+\mbox{\hyperlink{Logger_8cpp}{Logger.\+cpp}}\end{DoxyCompactItemize}

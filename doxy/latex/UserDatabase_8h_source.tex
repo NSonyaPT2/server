@@ -1,0 +1,26 @@
+\doxysection{User\+Database.\+h}
+\hypertarget{UserDatabase_8h_source}{}\label{UserDatabase_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ USERDATABASE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ USERDATABASE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUserDatabase}{UserDatabase}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ std::unordered\_map<std::string,\ std::string>\ users;\ }
+\DoxyCodeLine{00015\ \ \ \ \ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classUserDatabase_a35c3fab0b5dd484902d3a1cf33e36e18}{UserDatabase}}();}
+\DoxyCodeLine{00021\ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserDatabase_a3ce7dc9995f929ca01aff1d5857877bd}{loadFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserDatabase_a325bec3939d8b459f596a501e6ebf06d}{checkUser}}(\textcolor{keyword}{const}\ std::string\&\ login);}
+\DoxyCodeLine{00036\ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ std::string\ \mbox{\hyperlink{classUserDatabase_acd8d3cbc69b8be3d094184765beb5684}{getPassword}}(\textcolor{keyword}{const}\ std::string\&\ login);}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

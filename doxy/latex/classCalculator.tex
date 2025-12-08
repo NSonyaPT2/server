@@ -1,0 +1,70 @@
+\doxysection{Класс Calculator}
+\hypertarget{classCalculator}{}\label{classCalculator}\index{Calculator@{Calculator}}
+
+
+Класс для математических вычислений  
+
+
+
+
+{\ttfamily \#include $<$Calculator.\+h$>$}
+
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static uint16\+\_\+t \mbox{\hyperlink{classCalculator_a7b43207d45311a942e63cc3adafef545}{calculate\+Sum\+Of\+Squares}} (const std\+::vector$<$ uint16\+\_\+t $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Вычисление суммы квадратов элементов вектора \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для математических вычислений 
+
+Содержит статические методы для вычислений над векторами данных 
+
+\doxysubsection{Методы}
+\Hypertarget{classCalculator_a7b43207d45311a942e63cc3adafef545}\label{classCalculator_a7b43207d45311a942e63cc3adafef545} 
+\index{Calculator@{Calculator}!calculateSumOfSquares@{calculateSumOfSquares}}
+\index{calculateSumOfSquares@{calculateSumOfSquares}!Calculator@{Calculator}}
+\doxysubsubsection{\texorpdfstring{calculateSumOfSquares()}{calculateSumOfSquares()}}
+{\footnotesize\ttfamily uint16\+\_\+t Calculator\+::calculate\+Sum\+Of\+Squares (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ uint16\+\_\+t $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Вычисление суммы квадратов элементов вектора 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em data} & Вектор значений типа uint16\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат вычислений (uint16\+\_\+t) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+При переполнении возвращается максимальное значение uint16\+\_\+t 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{См. также}
+Требования к функции обработки данных (ТЗ п.4.\+2.\+5)
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em data} & Вектор значений типа uint16\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Результат вычислений (uint16\+\_\+t) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Заметки}
+При переполнении возвращается максимальное значение uint16\+\_\+t
+\end{DoxyNote}
+Алгоритм соответствует требованиям ТЗ п.4.\+2.\+5\+:
+\begin{DoxyItemize}
+\item Проверка переполнения при суммировании
+\item Возврат 2\texorpdfstring{$^\wedge$}{\string^}15-\/1 при переполнении вверх
+\item Возврат 0 при переполнении вниз 
+\end{DoxyItemize}
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Calculator.\+h\item 
+\mbox{\hyperlink{Calculator_8cpp}{Calculator.\+cpp}}\end{DoxyCompactItemize}

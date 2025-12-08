@@ -1,0 +1,74 @@
+\doxysection{Класс Session}
+\hypertarget{classSession}{}\label{classSession}\index{Session@{Session}}
+
+
+Класс для обработки клиентской сессии  
+
+
+
+
+{\ttfamily \#include $<$Session.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSession_aaaaf40afdb2b553ffe0df5ab2a051c3f}{Session}} (int socket, \mbox{\hyperlink{classUserDatabase}{User\+Database}} \&db, \mbox{\hyperlink{classLogger}{Logger}} \&log)
+\begin{DoxyCompactList}\small\item\em Конструктор сессии \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSession_af3156a6222210d80a8da13c07fa22e93}{handle\+Session}} ()
+\begin{DoxyCompactList}\small\item\em Обработка клиентской сессии \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки клиентской сессии 
+
+Управляет всем жизненным циклом соединения с клиентом\+: аутентификация, прием данных, вычисления, отправка результатов 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classSession_aaaaf40afdb2b553ffe0df5ab2a051c3f}\label{classSession_aaaaf40afdb2b553ffe0df5ab2a051c3f} 
+\index{Session@{Session}!Session@{Session}}
+\index{Session@{Session}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{Session()}{Session()}}
+{\footnotesize\ttfamily Session\+::\+Session (\begin{DoxyParamCaption}\item[{int}]{socket,  }\item[{\mbox{\hyperlink{classUserDatabase}{User\+Database}} \&}]{db,  }\item[{\mbox{\hyperlink{classLogger}{Logger}} \&}]{log }\end{DoxyParamCaption})}
+
+
+
+Конструктор сессии 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em socket} & Дескриптор клиентского сокета \\
+\hline
+\mbox{\texttt{ in}}  & {\em db} & Ссылка на базу пользователей \\
+\hline
+\mbox{\texttt{ in}}  & {\em log} & Ссылка на логгер \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{classSession_af3156a6222210d80a8da13c07fa22e93}\label{classSession_af3156a6222210d80a8da13c07fa22e93} 
+\index{Session@{Session}!handleSession@{handleSession}}
+\index{handleSession@{handleSession}!Session@{Session}}
+\doxysubsubsection{\texorpdfstring{handleSession()}{handleSession()}}
+{\footnotesize\ttfamily void Session\+::handle\+Session (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Обработка клиентской сессии 
+
+Выполняет всю последовательность обработки клиента
+
+Выполняет всю последовательность обработки клиента\+:
+\begin{DoxyEnumerate}
+\item Аутентификация
+\item Обработка векторов данных
+\item Закрытие соединения \begin{DoxyNote}{Заметки}
+В текущей реализации содержатся заглушки для демонстрации 
+\end{DoxyNote}
+
+\end{DoxyEnumerate}
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Session.\+h\item 
+\mbox{\hyperlink{Session_8cpp}{Session.\+cpp}}\end{DoxyCompactItemize}

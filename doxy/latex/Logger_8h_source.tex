@@ -1,0 +1,30 @@
+\doxysection{Logger.\+h}
+\hypertarget{Logger_8h_source}{}\label{Logger_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LOGGER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LOGGER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLogger}{Logger}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classLogger}{Logger}}*\ instance;\ }
+\DoxyCodeLine{00017\ \ \ \ \ std::ofstream\ logFile;\ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ std::mutex\ logMutex;\ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classLogger}{Logger}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00025\ \ \ \ \ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classLogger}{Logger}}\&\ \mbox{\hyperlink{classLogger_ab2ca8437ac8bffb3ecb621f701b6e37c}{getInstance}}(\textcolor{keyword}{const}\ std::string\&\ filename\ =\ \textcolor{stringliteral}{"{}/var/log/scale.log"{}});}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLogger_a1e66e0d14c4df89e608ec8f694a70a33}{logError}}(\textcolor{keyword}{const}\ std::string\&\ severity,\ \textcolor{keyword}{const}\ std::string\&\ message,\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ params\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classLogger_acb668a9e186a25fbaad2e4af6d1ed00a}{\string~Logger}}();}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

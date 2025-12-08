@@ -1,0 +1,74 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Logger}
+    \subitem {Logger}, \hyperpage{7}
+
+  \indexspace
+
+  \item {calculateSumOfSquares}
+    \subitem {Calculator}, \hyperpage{5}
+  \item {Calculator}, \hyperpage{5}
+    \subitem {calculateSumOfSquares}, \hyperpage{5}
+  \item {Calculator.cpp}, \hyperpage{15}
+  \item {checkUser}
+    \subitem {UserDatabase}, \hyperpage{11}
+
+  \indexspace
+
+  \item {getInstance}
+    \subitem {Logger}, \hyperpage{7}
+  \item {getPassword}
+    \subitem {UserDatabase}, \hyperpage{12}
+
+  \indexspace
+
+  \item {handleSession}
+    \subitem {Session}, \hyperpage{10}
+
+  \indexspace
+
+  \item {loadFromFile}
+    \subitem {UserDatabase}, \hyperpage{12}
+  \item {logError}
+    \subitem {Logger}, \hyperpage{8}
+  \item {Logger}, \hyperpage{6}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Logger}, \hyperpage{7}
+    \subitem {getInstance}, \hyperpage{7}
+    \subitem {logError}, \hyperpage{8}
+  \item {Logger.cpp}, \hyperpage{16}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{18}
+  \item {main.cpp}, \hyperpage{17}
+    \subitem {main}, \hyperpage{18}
+
+  \indexspace
+
+  \item {parseCommandLine}
+    \subitem {Server}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Server}, \hyperpage{8}
+    \subitem {parseCommandLine}, \hyperpage{9}
+    \subitem {Server}, \hyperpage{9}
+    \subitem {start}, \hyperpage{9}
+  \item {Server.cpp}, \hyperpage{19}
+  \item {Session}, \hyperpage{10}
+    \subitem {handleSession}, \hyperpage{10}
+    \subitem {Session}, \hyperpage{10}
+  \item {Session.cpp}, \hyperpage{20}
+  \item {start}
+    \subitem {Server}, \hyperpage{9}
+
+  \indexspace
+
+  \item {UserDatabase}, \hyperpage{11}
+    \subitem {checkUser}, \hyperpage{11}
+    \subitem {getPassword}, \hyperpage{12}
+    \subitem {loadFromFile}, \hyperpage{12}
+  \item {UserDatabase.cpp}, \hyperpage{21}
+
+\end{theindex}

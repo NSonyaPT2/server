@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: Файл Session.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Файл Session.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Реализация класса <a class="el" href="classSession.html" title="Класс для обработки клиентской сессии">Session</a>.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;Session.h&quot;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для Session.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="Session_8cpp__incl.png" border="0" usemap="#aSession_8cpp" alt=""/></div>
+<map name="aSession_8cpp" id="aSession_8cpp">
+<area shape="rect" title="Реализация класса Session." alt="" coords="441,5,539,31"/>
+<area shape="rect" href="Session_8h_source.html" title=" " alt="" coords="288,79,372,104"/>
+<area shape="poly" title=" " alt="" coords="465,33,370,75,368,71,463,28"/>
+<area shape="rect" title=" " alt="" coords="397,79,471,104"/>
+<area shape="poly" title=" " alt="" coords="483,33,454,69,449,66,479,29"/>
+<area shape="rect" title=" " alt="" coords="496,79,599,104"/>
+<area shape="poly" title=" " alt="" coords="502,29,531,66,527,70,497,33"/>
+<area shape="rect" title=" " alt="" coords="623,79,703,104"/>
+<area shape="poly" title=" " alt="" coords="519,28,623,71,621,76,517,33"/>
+<area shape="rect" href="UserDatabase_8h_source.html" title=" " alt="" coords="52,152,179,177"/>
+<area shape="poly" title=" " alt="" coords="296,107,164,150,162,145,295,101"/>
+<area shape="rect" title=" " alt="" coords="154,225,213,251"/>
+<area shape="poly" title=" " alt="" coords="310,106,277,127,244,154,218,184,198,215,194,212,214,181,240,150,274,122,307,102"/>
+<area shape="rect" href="Logger_8h_source.html" title=" " alt="" coords="254,152,331,177"/>
+<area shape="poly" title=" " alt="" coords="326,106,307,141,303,139,321,103"/>
+<area shape="rect" href="Calculator_8h_source.html" title=" " alt="" coords="406,152,505,177"/>
+<area shape="poly" title=" " alt="" coords="351,102,424,143,422,147,349,106"/>
+<area shape="rect" title=" " alt="" coords="424,225,487,251"/>
+<area shape="poly" title=" " alt="" coords="340,102,396,176,434,214,430,218,392,179,336,106"/>
+<area shape="rect" title=" " alt="" coords="511,225,578,251"/>
+<area shape="poly" title=" " alt="" coords="373,99,456,121,493,135,519,150,537,180,545,211,540,212,532,182,515,154,491,139,454,126,371,104"/>
+<area shape="poly" title=" " alt="" coords="128,176,165,213,161,217,125,180"/>
+<area shape="rect" title=" " alt="" coords="5,225,129,251"/>
+<area shape="poly" title=" " alt="" coords="110,179,85,216,80,213,105,176"/>
+<area shape="poly" title=" " alt="" coords="277,180,214,220,211,215,274,175"/>
+<area shape="rect" title=" " alt="" coords="237,225,311,251"/>
+<area shape="poly" title=" " alt="" coords="292,178,283,213,278,212,287,177"/>
+<area shape="rect" title=" " alt="" coords="335,225,399,251"/>
+<area shape="poly" title=" " alt="" coords="306,175,347,214,343,218,303,179"/>
+<area shape="poly" title=" " alt="" coords="458,178,458,212,453,212,453,178"/>
+<area shape="poly" title=" " alt="" coords="471,175,521,214,518,219,468,179"/>
+</map>
+</div>
+</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Реализация класса <a class="el" href="classSession.html" title="Класс для обработки клиентской сессии">Session</a>. </p>
+<dl class="section author"><dt>Автор</dt><dd>Назарова Софья </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>WECT ПГУ </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

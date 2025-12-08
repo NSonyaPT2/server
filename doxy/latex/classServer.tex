@@ -1,0 +1,83 @@
+\doxysection{Класс Server}
+\hypertarget{classServer}{}\label{classServer}\index{Server@{Server}}
+
+
+Основной класс сетевого сервера  
+
+
+
+
+{\ttfamily \#include $<$Server.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classServer_ad5ec9462b520e59f7ea831e157ee5e59}{Server}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_ac866f5a688964e90100bc509eb3caad3}{parse\+Command\+Line}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em Разбор параметров командной строки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classServer_a7eac07d2582fa01c2671362efa955b31}{start}} ()
+\begin{DoxyCompactList}\small\item\em Запуск сервера \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Основной класс сетевого сервера 
+
+Обрабатывает параметры командной строки и запускает сервер 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classServer_ad5ec9462b520e59f7ea831e157ee5e59}\label{classServer_ad5ec9462b520e59f7ea831e157ee5e59} 
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{Server()}{Server()}}
+{\footnotesize\ttfamily Server\+::\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Конструктор по умолчанию 
+
+Инициализирует порт значением по умолчанию (33333) 
+
+\doxysubsection{Методы}
+\Hypertarget{classServer_ac866f5a688964e90100bc509eb3caad3}\label{classServer_ac866f5a688964e90100bc509eb3caad3} 
+\index{Server@{Server}!parseCommandLine@{parseCommandLine}}
+\index{parseCommandLine@{parseCommandLine}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{parseCommandLine()}{parseCommandLine()}}
+{\footnotesize\ttfamily void Server\+::parse\+Command\+Line (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv }\end{DoxyParamCaption})}
+
+
+
+Разбор параметров командной строки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em argc} & Количество аргументов \\
+\hline
+\mbox{\texttt{ in}}  & {\em argv} & Массив аргументов\\
+\hline
+\mbox{\texttt{ in}}  & {\em argc} & Количество аргументов \\
+\hline
+\mbox{\texttt{ in}}  & {\em argv} & Массив аргументов\\
+\hline
+\end{DoxyParams}
+Поддерживает параметры\+: -\/p, --port PORT -\/ установка порта сервера -\/h, --help -\/ вывод справки \Hypertarget{classServer_a7eac07d2582fa01c2671362efa955b31}\label{classServer_a7eac07d2582fa01c2671362efa955b31} 
+\index{Server@{Server}!start@{start}}
+\index{start@{start}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Server\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Запуск сервера 
+
+Запускает сервер на указанном порту
+
+Запускает сервер на указанном порту \begin{DoxyNote}{Заметки}
+В текущей реализации содержит заглушку для демонстрации 
+\end{DoxyNote}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Server.\+h\item 
+\mbox{\hyperlink{Server_8cpp}{Server.\+cpp}}\end{DoxyCompactItemize}

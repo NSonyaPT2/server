@@ -1,0 +1,104 @@
+\doxysection{Класс User\+Database}
+\hypertarget{classUserDatabase}{}\label{classUserDatabase}\index{UserDatabase@{UserDatabase}}
+
+
+Класс для работы с базой данных пользователей  
+
+
+
+
+{\ttfamily \#include $<$User\+Database.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classUserDatabase_a35c3fab0b5dd484902d3a1cf33e36e18}\label{classUserDatabase_a35c3fab0b5dd484902d3a1cf33e36e18} 
+{\bfseries User\+Database} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUserDatabase_a3ce7dc9995f929ca01aff1d5857877bd}{load\+From\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Загрузка базы пользователей из файла \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUserDatabase_a325bec3939d8b459f596a501e6ebf06d}{check\+User}} (const std\+::string \&login)
+\begin{DoxyCompactList}\small\item\em Проверка наличия пользователя в базе \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUserDatabase_acd8d3cbc69b8be3d094184765beb5684}{get\+Password}} (const std\+::string \&login)
+\begin{DoxyCompactList}\small\item\em Получение пароля пользователя \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для работы с базой данных пользователей 
+
+Хранит пары "{}логин\+:пароль"{} и предоставляет методы для проверки 
+
+\doxysubsection{Методы}
+\Hypertarget{classUserDatabase_a325bec3939d8b459f596a501e6ebf06d}\label{classUserDatabase_a325bec3939d8b459f596a501e6ebf06d} 
+\index{UserDatabase@{UserDatabase}!checkUser@{checkUser}}
+\index{checkUser@{checkUser}!UserDatabase@{UserDatabase}}
+\doxysubsubsection{\texorpdfstring{checkUser()}{checkUser()}}
+{\footnotesize\ttfamily bool User\+Database\+::check\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{login }\end{DoxyParamCaption})}
+
+
+
+Проверка наличия пользователя в базе 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em login} & Логин пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ пользователь существует, false -\/ не существует 
+\end{DoxyReturn}
+\Hypertarget{classUserDatabase_acd8d3cbc69b8be3d094184765beb5684}\label{classUserDatabase_acd8d3cbc69b8be3d094184765beb5684} 
+\index{UserDatabase@{UserDatabase}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!UserDatabase@{UserDatabase}}
+\doxysubsubsection{\texorpdfstring{getPassword()}{getPassword()}}
+{\footnotesize\ttfamily std\+::string User\+Database\+::get\+Password (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{login }\end{DoxyParamCaption})}
+
+
+
+Получение пароля пользователя 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em login} & Логин пользователя \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Пароль пользователя или пустую строку, если пользователь не найден 
+\end{DoxyReturn}
+\Hypertarget{classUserDatabase_a3ce7dc9995f929ca01aff1d5857877bd}\label{classUserDatabase_a3ce7dc9995f929ca01aff1d5857877bd} 
+\index{UserDatabase@{UserDatabase}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!UserDatabase@{UserDatabase}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily bool User\+Database\+::load\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Загрузка базы пользователей из файла 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em filename} & Имя файла с базой пользователей \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ успешная загрузка, false -\/ ошибка
+\end{DoxyReturn}
+Формат файла\+: логин\+:пароль (по одной паре на строку)
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em filename} & Имя файла с базой пользователей \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true -\/ успешная загрузка, false -\/ ошибка
+\end{DoxyReturn}
+Формат файла\+: логин\+:пароль (по одной паре на строку) \begin{DoxyNote}{Заметки}
+Соответствует требованиям ТЗ п.4.\+2.\+2 
+\end{DoxyNote}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+User\+Database.\+h\item 
+\mbox{\hyperlink{UserDatabase_8cpp}{User\+Database.\+cpp}}\end{DoxyCompactItemize}
