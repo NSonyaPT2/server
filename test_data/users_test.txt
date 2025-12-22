@@ -1,0 +1,6 @@
+# Тестовая база пользователей
+# Формат: логин:пароль (пароль в открытом виде, как в ТЗ)
+testuser:testpass
+admin:admin123
+user1:password1
+user2:password2

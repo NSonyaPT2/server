@@ -14,3 +14,9 @@ target_link_libraries(run_tests
 )
 
 add_test(NAME run_tests COMMAND run_tests)
+
+# Подключаем модульные тесты
+add_subdirectory(unit_tests)
+
+# Подключаем функциональные тесты
+add_subdirectory(functional_tests)

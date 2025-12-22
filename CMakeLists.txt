@@ -28,3 +28,11 @@ if(SOURCES)
 else()
     message(FATAL_ERROR "No source files found!")
 endif()
+
+# После добавления unit_tests добавьте:
+# Включение функциональных тестов
+add_subdirectory(tests/functional_tests)
+
+# Копирование тестовых данных в build
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/test_data 
+     DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/tests)
